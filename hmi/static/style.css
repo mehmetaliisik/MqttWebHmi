@@ -1,0 +1,45 @@
+.button {
+  background-color: #2d39a7; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button-red {
+  background-color: #f10404; /* Red */
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 3px;
+  cursor: pointer;
+  border-radius: 8px
+}
+.button-orange {
+  background-color: #ce8d00; /* Orange */
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 8px
+}
+p {
+  color: white;
+  font-size: 18px;
+}

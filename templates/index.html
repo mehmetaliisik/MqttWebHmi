@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <center> 
+        <form action="{{ request.path }}" method="post">
+            {% csrf_token %}
+            <input type="number" name="runTime1" placeholder="Enter run time">
+            <input type="submit" class="button" name="program1" value="Program 1"></br>
+
+            <input type="number" name="runTime2" placeholder="Enter run time">
+            <input type="submit" class="button" name="program2" value="Program 2"></br>
+
+            <input type="number" name="overRide" placeholder="{{overRide}}">
+            <input type="submit" class="button" style="padding: 10px 6px;font-size:14px" name="override" value="Change Override"></br>
+            
+            <input type="submit" class="button-red" name="stop" value="Stop"></br>
+            
+            <input type="submit" id="pauseButton" onclick="changeButtonValue()" class="button-orange" name="pause"value={{pauseButtonValue}}></br>
+        </form>
+        <script>
+            function changeButtonValue() {
+                if(document.getElementById('pauseButton').value=='Pause')
+                    document.getElementById('pauseButton').value = 'Continue';
+                else
+                    document.getElementById('pauseButton').value = 'Pause';
+            }
+        </script>
+    </center>
+{% endblock %}
